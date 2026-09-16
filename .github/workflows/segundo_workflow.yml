@@ -1,0 +1,13 @@
+name: Segundo workflow
+on: workflow_dispatch
+jobs:
+  primer-job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: primer paso ubuntu 22.04
+        run: echo "primer paso del primero job"
+  segundo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: segundo paso ubuntu-latest
+        run: echo "Segundo paso del segundo job"
