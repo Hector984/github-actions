@@ -1,0 +1,10 @@
+name: Primer workflow
+on: workflow_dispatch
+jobs:
+  primer-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name:primer paso
+      run: echo "Primero paso"
+      - name:segundo paso
+      run: echo "Segundo paso"
